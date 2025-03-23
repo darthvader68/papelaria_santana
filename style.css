@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monserrat', sans-serif;
+}
+
+body {
+    background-color: #f3f2ee;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* cabecalho */
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* navegacao */
+nav {
+    background-color: #2980b9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 15px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d6d6c4;
+    transform: scale(1.2);
+}
+
+/* Menu Hambúrguer para Mobile */
+.menu_btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* secoes */
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+#inicio {
+    background-image: url('papelaria.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    color: gray;
+    font-weight: 550;    
+}
+
+section h2 {
+    color: #3498db;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 18px;
+}
+
+/* servicos */
+.services_list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.services_list li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.services_list li:before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+}
+
+/* Produtos */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product_card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.product_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product_card h3 {
+    color: #2980b9;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.product_card p {
+    font-size: 15px;
+}
+
+/* contato */
+.contact_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.contact_info {
+    list-style: none;
+}
+
+.contact_info li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.contact_info .icon {
+    margin-right: 15px;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 540;
+    font-size: 16px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px 0;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+}
+
+footer p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.social_links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.social_links a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social_links a:hover {
+    transform: scale(1.2);
+}
+
+/* Responsividade para desktop e mobile */
+@media (max-width: 480px) {
+    .menu_btn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 30px;
+        padding: 10px 15px;
+        border-bottom: 1px solid #3498db;        
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav ul li a:hover {
+        transform: scale(1.1);
+    }
+
+    .contact_container {
+        grid-template-columns: 1fr;
+    }
+
+    #inicio {
+        height: 150px;
+    }
+
+    #inicio h2 {
+        font-size: 1.2rem;
+    }
+
+    #inicio p {
+        display: none;
+    }
+}
